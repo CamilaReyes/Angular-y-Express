@@ -1,0 +1,10 @@
+<form #productoFormulario="ngForm" (ngSubmit)="FormularioUp()">
+
+    <input id="nombre" name="nombre" type="text" placeholder="Ingresa el nombre del producto" required #nombre="ngModel" [(ngModel)]="Producto.nombre" /> 
+    <input id="marca" name="marca" type="text" placeholder="Ingresa la marca del producto" required #marca="ngModel" [(ngModel)]="Producto.marca" /> 
+    <input id="precio" name="precio" type="text" placeholder="Ingresa el precio del producto" required #precio="ngModel" [(ngModel)]="Producto.precio" /> 
+    <input id="unidades" name="unidades" type="text" placeholder="Ingresa las unidades del producto" required #unidades="ngModel" [(ngModel)]="Producto.unidades" /> 
+    <br/><br/>
+    <button type="submit"> Registrar producto </button>   
+
+</form>
